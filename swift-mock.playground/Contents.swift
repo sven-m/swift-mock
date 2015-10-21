@@ -120,7 +120,7 @@ let m = MockStuff()
 
 // set expectations
 m.mockA = mock(CallPattern.AtLeast(1))
-m.mockB = mock(CallPattern.None) { _ in } // ignore first argument, allow any number of calls
+m.mockB = mock(CallPattern.None) { _ in } // ignore first argument, allow no calls
 
 
 // run SUT (which calls mocks)
